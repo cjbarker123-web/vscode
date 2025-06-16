@@ -1,0 +1,134 @@
+/* Basic reset and styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav button {
+  background: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+nav button:hover,
+nav button.active {
+  background: #2a66c9;
+  color: white;
+}
+
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  min-height: 80vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Lesson styling */
+.lesson {
+  margin-bottom: 1.5rem;
+}
+
+.lesson h2 {
+  margin-top: 0;
+  color: #4a90e2;
+}
+
+.code-block {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 0.8rem 0;
+}
+
+/* Playground styles */
+#playgroundSection textarea {
+  width: 100%;
+  height: 200px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+#playgroundSection button {
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#playgroundSection button:hover {
+  background-color: #2a66c9;
+}
+
+#output {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 5px;
+  min-height: 100px;
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 1rem;
+}
+
+/* Progress Section */
+#progressSection ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#progressSection li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#progressSection li.completed {
+  color: green;
+  font-weight: bold;
+}
